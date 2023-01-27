@@ -1,20 +1,20 @@
 {
-  "name": "preentrega3torres",
+  "name": "pf-torres",
   "version": "1.0.0",
-  "description": "# --- PreEntrega3Torres ---",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "compile": "sass --watch scss/style.scss css/style.css"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Anthony-cL/PreEntrega3Torres.git"
+    "url": "git+https://github.com/Anthony-cL/PF-Torres-.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Anthony-cL/PreEntrega3Torres/issues"
+    "url": "https://github.com/Anthony-cL/PF-Torres-/issues"
   },
-  "homepage": "https://github.com/Anthony-cL/PreEntrega3Torres#readme"
+  "homepage": "https://github.com/Anthony-cL/PF-Torres-#readme"
 }
