@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.banner-movimiento {
+  animation-duration: 2s;
+  animation-name: mover;
+}
+
+.btn {
+  font-family: $fuente-principal;
+}

@@ -1,0 +1,31 @@
+// Contacto //
+
+.Contacto__contenedor {
+  margin-top: 3rem;
+}
+
+.banner-contacto {
+  h3:hover {
+    color: rgb(153, 168, 168);
+  }
+}
+
+form {
+  .form-label {
+    font-family: $fuente-contacto;
+    font-size: 18px;
+  }
+  .form-check-label {
+    font-family: $fuente-principal;
+    font-size: 16px;
+  }
+}
+
+.card {
+  h3 {
+    font-family: $fuente-principal;
+  }
+  p {
+    font-family: $fuente-principal;
+  }
+}

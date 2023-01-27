@@ -1,0 +1,14 @@
+// Navbar //
+
+header {
+  background-color: $color-navbar;
+
+  .nav-link {
+    color: $color-navbar-items;
+    font-family: $fuente-principal;
+
+    a:hover {
+      color: $color-hover;
+    }
+  }
+}

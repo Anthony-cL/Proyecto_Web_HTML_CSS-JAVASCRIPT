@@ -1,4 +1,2 @@
-# ---- Anthony Torres ----
-
-# --- Proyecto Final ---
-# PF-Torres-
+# Anthony Torres
+# Proyecto Final JavaScript

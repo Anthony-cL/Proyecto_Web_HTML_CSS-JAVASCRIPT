@@ -1,0 +1,41 @@
+// Colores //
+
+$color-navbar: #4289ac;
+$color-navbar-items: white;
+$color-footer: #4289ac;
+$color-hover: black;
+$color-boton: white;
+
+// Fuentes //
+
+$fuente-principal: roboto;
+$fuente-contacto: robotomono;
+
+// Tamaños //
+
+$titulo-principal: 4.5rem;
+$sub-titulo: 1.5rem;
+
+// Movimiento de texto//
+
+@keyframes mover {
+  from {
+    margin-left: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
+@keyframes mover_abajo {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

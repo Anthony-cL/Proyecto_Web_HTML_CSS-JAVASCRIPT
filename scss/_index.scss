@@ -1,0 +1,69 @@
+// Index //
+
+.container1 {
+  margin: auto;
+  max-width: 1320px;
+}
+
+.section1 {
+  @include flexCaja;
+  height: 35rem;
+  background-image: url(../img/fondo_inicio.jpg);
+  padding-top: 10rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  h1 {
+    color: white;
+    font-family: $fuente-principal;
+    font-size: $titulo-principal;
+  }
+  p {
+    color: white;
+    font-family: $fuente-principal;
+    font-size: $sub-titulo;
+  }
+
+  .mover {
+    animation-name: mover_abajo;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+  }
+
+  .boton {
+    font-family: $fuente-principal;
+    .boton:hover {
+      opacity: 0.5;
+    }
+    a {
+      color: $color-boton;
+    }
+  }
+
+  @media (max-width: 700px) {
+    h1 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+}
+
+.banner {
+  @include banner;
+}
+.row {
+  @include centrar;
+}
+
+.caja-card {
+  @include centrar;
+  @include centrar-texto;
+
+  .p_text {
+    margin-top: 1.5rem;
+  }
+}

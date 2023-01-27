@@ -1,0 +1,20 @@
+{
+  "name": "preentrega3torres",
+  "version": "1.0.0",
+  "description": "# --- PreEntrega3Torres ---",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass --watch scss/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anthony-cL/PreEntrega3Torres.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anthony-cL/PreEntrega3Torres/issues"
+  },
+  "homepage": "https://github.com/Anthony-cL/PreEntrega3Torres#readme"
+}

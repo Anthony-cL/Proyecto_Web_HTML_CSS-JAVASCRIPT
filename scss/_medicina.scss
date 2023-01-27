@@ -1,0 +1,21 @@
+// Medicina //
+
+.banner h3 {
+  font-size: 2rem;
+}
+.medicina__box {
+  flex-direction: column;
+  h5 {
+    font-size: 1.3rem;
+  }
+  .medicina__p p {
+    font-family: $fuente-principal;
+  }
+}
+.medicina__img {
+  margin-top: 3rem;
+  justify-content: center;
+}
+.medicina__img img {
+  border: 5px solid #4289ac;
+}

@@ -1,0 +1,24 @@
+// Peluqueria //
+
+.peluqueria__contenedor {
+  margin-top: 6rem;
+  .peluqueria__img img {
+    border: 5px solid #4289ac;
+  }
+}
+
+.peluqueria__title {
+  margin-bottom: 1rem;
+  font-family: $fuente-principal;
+  font-size: 10rem;
+
+  .peluqueria__sub {
+    font-size: $sub-titulo;
+  }
+}
+
+@media (max-width: 1235px) {
+  .boton-contactanos {
+    margin-bottom: 2rem;
+  }
+}

@@ -1,0 +1,19 @@
+// Footer //
+
+footer {
+  background-color: $color-footer;
+  width: 100%;
+  height: auto;
+  border-top: solid $color-footer 5px;
+
+  .card-body {
+    text-align: center;
+  }
+  .footer__text {
+    color: white;
+    font-family: $fuente-principal;
+  }
+  .footer__iconos img {
+    width: 25px;
+  }
+}

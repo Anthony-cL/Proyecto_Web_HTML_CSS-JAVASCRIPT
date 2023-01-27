@@ -1,0 +1,12 @@
+// Quienes Somos //
+
+.quienesSomos__subTitle {
+  font-size: 1.5rem;
+  font-family: $fuente-principal;
+}
+
+@media (max-width: 1235px) {
+  .boton-contactanos {
+    margin-bottom: 2rem;
+  }
+}

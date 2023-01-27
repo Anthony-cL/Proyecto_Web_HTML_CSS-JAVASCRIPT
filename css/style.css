@@ -1,0 +1,214 @@
+@keyframes mover {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+@keyframes mover_abajo {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.banner-movimiento {
+  animation-duration: 2s;
+  animation-name: mover;
+}
+
+.btn {
+  font-family: roboto;
+}
+
+header {
+  background-color: #4289ac;
+}
+header .nav-link {
+  color: white;
+  font-family: roboto;
+}
+header .nav-link a:hover {
+  color: black;
+}
+
+footer {
+  background-color: #4289ac;
+  width: 100%;
+  height: auto;
+  border-top: solid #4289ac 5px;
+}
+footer .card-body {
+  text-align: center;
+}
+footer .footer__text {
+  color: white;
+  font-family: roboto;
+}
+footer .footer__iconos img {
+  width: 25px;
+}
+
+.container1 {
+  margin: auto;
+  max-width: 1320px;
+}
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 35rem;
+  background-image: url(../img/fondo_inicio.jpg);
+  padding-top: 10rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.section1 h1 {
+  color: white;
+  font-family: roboto;
+  font-size: 4.5rem;
+}
+.section1 p {
+  color: white;
+  font-family: roboto;
+  font-size: 1.5rem;
+}
+.section1 .mover {
+  animation-name: mover_abajo;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+}
+.section1 .boton {
+  font-family: roboto;
+}
+.section1 .boton .boton:hover {
+  opacity: 0.5;
+}
+.section1 .boton a {
+  color: white;
+}
+@media (max-width: 700px) {
+  .section1 h1 {
+    font-size: 3rem;
+  }
+  .section1 p {
+    font-size: 1rem;
+  }
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  font-family: roboto;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.caja-card {
+  display: flex;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  align-self: center;
+  align-items: center;
+}
+.caja-card .p_text {
+  margin-top: 1.5rem;
+}
+
+.peluqueria__contenedor {
+  margin-top: 6rem;
+}
+.peluqueria__contenedor .peluqueria__img img {
+  border: 5px solid #4289ac;
+}
+
+.peluqueria__title {
+  margin-bottom: 1rem;
+  font-family: roboto;
+  font-size: 10rem;
+}
+.peluqueria__title .peluqueria__sub {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 1235px) {
+  .boton-contactanos {
+    margin-bottom: 2rem;
+  }
+}
+.banner h3 {
+  font-size: 2rem;
+}
+
+.medicina__box {
+  flex-direction: column;
+}
+.medicina__box h5 {
+  font-size: 1.3rem;
+}
+.medicina__box .medicina__p p {
+  font-family: roboto;
+}
+
+.medicina__img {
+  margin-top: 3rem;
+  justify-content: center;
+}
+
+.medicina__img img {
+  border: 5px solid #4289ac;
+}
+
+.quienesSomos__subTitle {
+  font-size: 1.5rem;
+  font-family: roboto;
+}
+
+@media (max-width: 1235px) {
+  .boton-contactanos {
+    margin-bottom: 2rem;
+  }
+}
+.Contacto__contenedor {
+  margin-top: 3rem;
+}
+
+.banner-contacto h3:hover {
+  color: rgb(153, 168, 168);
+}
+
+form .form-label {
+  font-family: robotomono;
+  font-size: 18px;
+}
+form .form-check-label {
+  font-family: roboto;
+  font-size: 16px;
+}
+
+.card h3 {
+  font-family: roboto;
+}
+.card p {
+  font-family: roboto;
+}
+
+/*# sourceMappingURL=style.css.map */
