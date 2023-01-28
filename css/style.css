@@ -211,4 +211,17 @@ form .form-check-label {
   font-family: roboto;
 }
 
+.container_tienda {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.container_tienda .card__tienda {
+  margin-right: 5rem;
+  margin-bottom: 2rem;
+}
+.container_tienda .card {
+  font-family: roboto;
+  font-size: 20px;
+}
+
 /*# sourceMappingURL=style.css.map */
