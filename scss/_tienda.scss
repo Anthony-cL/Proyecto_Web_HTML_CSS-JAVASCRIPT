@@ -1,6 +1,6 @@
 .container_tienda {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
 
     .card__tienda {
         margin-right: 5rem;
@@ -8,6 +8,7 @@
     }
 
     .card {
+        width: 400px;
         font-family: $fuente-principal;
         font-size: 20px
     }

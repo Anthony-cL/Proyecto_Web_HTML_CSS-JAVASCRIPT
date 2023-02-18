@@ -212,14 +212,15 @@ form .form-check-label {
 }
 
 .container_tienda {
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 .container_tienda .card__tienda {
   margin-right: 5rem;
   margin-bottom: 2rem;
 }
 .container_tienda .card {
+  width: 400px;
   font-family: roboto;
   font-size: 20px;
 }
