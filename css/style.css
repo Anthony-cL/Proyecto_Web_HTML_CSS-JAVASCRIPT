@@ -225,4 +225,8 @@ form .form-check-label {
   font-size: 20px;
 }
 
+.card-body {
+  padding-top: 10px;
+}
+
 /*# sourceMappingURL=style.css.map */
