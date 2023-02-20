@@ -1,24 +1,33 @@
 .banner_tienda {
+    width: 100%;
     margin-top: 4rem;
-}
-
-
-
-.container_tienda {
+  }
+  
+  .container_tienda {
     margin-left: 5%;
     margin-right: 5%;
-
+  
     .card__tienda {
-        margin-top: 1.8rem;
-        margin-right: 3rem;
-        margin-bottom: 1rem;
+      margin-top: 1.8rem;
+      margin-right: 3rem;
+      margin-bottom: 1rem;
     }
-
+  
     .card {
-        width: 400px;
-        font-family: $fuente-principal;
-        font-size: 20px
+      font-family: $fuente-principal;
+      font-size: 20px;
+      max-width: 400px;
+      width: 100%;
     }
-
-}
-
+  }
+  
+  @media (max-width: 500px) {
+    .container_tienda {
+      margin-left: 0%;
+      margin-right: 0%;
+    }
+  
+    .card {
+      max-width: 100%;
+    }
+  }
