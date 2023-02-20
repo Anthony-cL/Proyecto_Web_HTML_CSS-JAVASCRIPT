@@ -1,10 +1,17 @@
+.banner_tienda {
+    margin-top: 4rem;
+}
+
+
+
 .container_tienda {
     margin-left: 5%;
     margin-right: 5%;
 
     .card__tienda {
-        margin-right: 5rem;
-        margin-bottom: 2rem;
+        margin-top: 1.8rem;
+        margin-right: 3rem;
+        margin-bottom: 1rem;
     }
 
     .card {
@@ -15,7 +22,3 @@
 
 }
 
-.card-body{
-    padding-top: 10px;
-
-}
