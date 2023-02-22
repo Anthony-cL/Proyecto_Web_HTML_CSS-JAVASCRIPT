@@ -1,3 +1,6 @@
+
+// Local Storage
+
 window.addEventListener('load', () => {
     if (localStorage.getItem('carrito')) {
       carritoDeCompras = JSON.parse(localStorage.getItem('carrito'));
@@ -7,8 +10,10 @@ window.addEventListener('load', () => {
 
 // Variables 
 
-let carritoDeCompras = []
+let carritoDeCompras = [];
+let listaDeProductos = [];
 let tabla = document.querySelector('#tablaCarrito');
+
 
 // Clase Constructora
 
@@ -26,10 +31,6 @@ class ComidaMascota {
     }
 }
 
-// Array Lista de productos
-
-
-let listaDeProductos = [];
   
 // Funcion para agregar al carrito
 
@@ -41,6 +42,7 @@ function agregarAlCarrito(id) {
       agregarFilaCarrito(productoEncontrado);
   
       console.log(`El producto ${productoEncontrado.nombre} ha sido agregado al carrito.`);
+      document.querySelector("#mensaje_carrito").textContent = "Uno o mas productos han sido Agregados!.";
   
       localStorage.setItem('carrito', JSON.stringify(carritoDeCompras));
     } else {
@@ -98,7 +100,8 @@ function eliminarProducto(id) {
       eliminarFilaCarrito(index);
       carritoDeCompras.splice(index, 1);
       console.log(`El producto con ID ${id} ha sido eliminado del carrito.`);
-  
+      document.querySelector("#mensaje_carrito").textContent = "Uno o mas productos han sido eliminados.";
+
       localStorage.setItem('carrito', JSON.stringify(carritoDeCompras));
     } else {
       console.log(`El producto con ID ${id} no se encuentra en el carrito.`);
@@ -108,7 +111,7 @@ function eliminarProducto(id) {
 
 const comida1 = new ComidaMascota(1 ,"Comida para gato Indoor","Equilibrio","3KG",7000);
 const comida2 = new ComidaMascota(2,"Comida para gato Indoor","Equilibrio","6KG",14000);
-const comida3 = new ComidaMascota(3,"Comida para gatitos","Naturalis","3KG",5000);
+const comida3 = new ComidaMascota(3,"Comida para gatitos","Naturalis","3KG", 5000);
 const comida4 = new ComidaMascota(4,"comida para perro","Alaska","15KG",20000);
 const comida5 = new ComidaMascota(5,"Comida para gato control de pelo","Hills","3KG",8000);
 const comida6 = new ComidaMascota(6,"comida para gato control de pelo","Hills","6KG",15000);
