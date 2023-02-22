@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda</title>
-    <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -38,7 +37,6 @@
           content="mascotas,tienda,productos,baratos,saludables,"
         />
         <!-- Fin Descripcion y palabras clave-->
-      </head>
 </head>
 <body>
       <!--Comienzo del Header y la navbar -->
@@ -102,102 +100,138 @@
       <div class="banner_tienda">
         <div class="container bg-primary text-light p-5">
           <div class="banner">
-            <h3 class="mb-3 mb-md-0">Tienda</h3>
+            <h3 id="prueba" class="mb-3 mb-md-0">Tienda</h3>
           </div>
       </div>
       <div class="container ">
         <div class="container_tienda d-flex flex-row ">        
           <div class="row p-5 justify-content-center">
+
             <div class="card card__tienda col-md-2">
               <img src="../img/mascota.jpg" class="card-img-top" alt="Comida para Gato - Equilibrio Salmon">
               <div class="card-body">
                 <p class="card-title">Equilibrio - Comida para gato Indoor 3kg</p>
                 <p class="card-text ">Valor: $ 7.000</p>
-                <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
+                <a  id="boton-compra-1" onclick="agregarAlCarrito(1)" class="btn btn-primary">AGREGAR AL CARRITO</a>
               </div>
             </div>
+
+
             <div class="card card__tienda col-md-2 ">
               <img src="../img/mascota1.jpg" class="p-2 card-img-top img-fluid" alt="Comida para gatos - Equilibrio Indoor">
               <div class="card-body">
                 <h5 class="card-title">Equilibrio - Comida para gato Indoor 6kg</h5>
                 <p class="card-text ">Valor: $ 14.000</p>
-                <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
+                <a id="boton-compra-2" onclick="agregarAlCarrito(2)" class="btn btn-primary">AGREGAR AL CARRITO</a>
               </div>
             </div>
+
+
             <div class="card card__tienda col-md-2 ">
               <img src="../img/mascota2.jpg" class="card-img-top" alt="Comida para gato - naturalis">
               <div class="card-body">
                 <h5 class="card-title">Naturalis - Comida para gatitos 3kg</h5>
                 <p class="card-text">Valor: $5.000</p>
-                <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
+                <a id="boton-compra-3" onclick="agregarAlCarrito(3)" class="btn btn-primary">AGREGAR AL CARRITO</a>
               </div>
             </div>
+
+
             <div class="card card__tienda col-md-2 ">
               <img src="../img/mascota3.jpg" class="card-img-top" alt="Comida para perro -  Alaska">
               <div class="card-body">
                 <h5 class="card-title">Alaska - Comida para perro 15kg</h5>
                 <p class="card-text">Precio: $20.000</p>
-                <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
+                <a id="boton-compra-4" onclick="agregarAlCarrito(4)" class="btn btn-primary">AGREGAR AL CARRITO</a>
               </div>
             </div>
+
+
             <div class="card card__tienda col-md-4 ">
               <img src="../img/mascota5.jpg" class="card-img-top" alt="Comida para gato - hills - control de pelo">
               <div class="card-body">
                 <h5 class="card-title">Hills - Comida para gato control de pelo 3kg</h5>
                 
                 <p class="card-text">Precio: $8.000</p>
-                <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
+                <a id="boton-compra-5" onclick="agregarAlCarrito(5)" class="btn btn-primary">AGREGAR AL CARRITO</a>
               </div>
             </div>
+
+
             <div class="card card__tienda col-md-4 ">
               <img src="../img/mascota5.jpg" class="card-img-top" alt="Comida para gato - hills - control de pelo">
               <div class="card-body">
                 <h5 class="card-title">Hills - Comida para gato control de pelo 6kg</h5>
                 
                 <p class="card-text">Precio: $15.000</p>
-                <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
+                <a id="boton-compra-6" onclick="agregarAlCarrito(6)" class="btn btn-primary">AGREGAR AL CARRITO</a>
               </div>
             </div>
+
+
             <div class="card card__tienda col-md-4 ">
               <img src="../img/mascota6.jpg" class="card-img-top" alt="comida para gato - hills - control de peso">
               <div class="card-body">
                 <h5 class="card-title">Hills - Comida para gato control de pelo 9kg</h5>
-                
                 <p class="card-text">Precio: $21.000</p>
-                <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
+                <a id="boton-compra-7" onclick="agregarAlCarrito(7)" class="btn btn-primary">AGREGAR AL CARRITO</a>
               </div>
             </div>
+
+
             <div class="card card__tienda col-md-4 ">
               <img src="../img/mascota7.jpg" class="card-img-top" alt="comida para gato - hills - indoor">
               <div class="card-body">
                 <h5 class="card-title">Hills - Comida para gato Indoor <br>3kg</h5>
-                
                 <p class="card-text">Precio: $5.000 </p>
-                <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
+                <a id="boton-compra-8" onclick="agregarAlCarrito(8)" class="btn btn-primary">AGREGAR AL CARRITO</a>
               </div>
             </div>
+
+
             <div class="card card__tienda col-md-4 ">
               <img src="../img/mascota8.jpg" class="card-img-top" alt="comida para perro - mv - Dieta">
               <div class="card-body">
-                <h5 class="card-title">MV - Comida para perro Articular 10kg</h5>
-                
+                <h5 class="card-title">MV - Comida para perro Articular 10kg</h5>  
                 <p class="card-text">Precio: $22.000</p>
-                <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
+                <a id="boton-compra-9" onclick="agregarAlCarrito(9)" class="btn btn-primary">AGREGAR AL CARRITO</a>
               </div>
             </div>
+
+
             <div class="card card__tienda col-md-4 ">
               <img src="../img/mascota9.jpg" class="card-img-top" alt="comida para perro - mv - dieta2">
               <div class="card-body">
                 <h5 class="card-title">Mv - Comida pra perro Cardio 10kg</h5>
                 
                 <p class="card-text">Precio: $23.000</p>
-                <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
+                <a id="boton-compra-10" onclick="agregarAlCarrito(10)" class="btn btn-primary">AGREGAR AL CARRITO</a>
               </div>
             </div>
+            
           </div>
         </div>
         </div>
       <div>
+        <div class="container d-flex justify-content-center">
+          <h3 class="">Carrito de compras</h3>
+        </div>
+        <div class="container table_container">
+          <table class="table" id="tablaCarrito">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>PRODUCTO</th>
+                <th>MARCA</th>
+                <th>PRECIO</th>
+                <th>VALOR</th>
+              </tr>
+            </thead>
+            <tbody class="table_body">
+            
+            </tbody>
+          </table>
+        </div>
       <footer>
         <div class="container">
           <div class="row p-5">
