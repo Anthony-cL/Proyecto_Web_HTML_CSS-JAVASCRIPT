@@ -1,3 +1,5 @@
+
+
 // Variables
 // Arrays
 
@@ -51,6 +53,23 @@ function agregarAlCarrito(id) {
       tabla.rows[index+1].cells[5].textContent = cantidadActual + 1;
       carritoDeCompras[index].cantidad += 1;
 
+      const Toast = Swal.mixin({
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.addEventListener('mouseenter', Swal.stopTimer)
+          toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+      })
+      
+      Toast.fire({
+        icon: 'success',
+        title: 'Signed in successfully'
+      })
+
     } else {
 
       // Si el producto no está en el carrito, agregar una nueva fila
@@ -58,6 +77,23 @@ function agregarAlCarrito(id) {
       carritoDeCompras.push({...productoEncontrado, cantidad: 1});
       agregarFilaCarrito({...productoEncontrado, cantidad: 1});
       document.querySelector("#mensaje_carrito").textContent = "Uno o mas productos han sido Agregados!.";
+
+      const Toast = Swal.mixin({
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.addEventListener('mouseenter', Swal.stopTimer)
+          toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+      })
+      
+      Toast.fire({
+        icon: 'success',
+        title: 'Producto Agregado Al Carrito'
+      })
 
       // Se Actualiza el Local Storage 
       localStorage.setItem('carrito', JSON.stringify(carritoDeCompras));
@@ -139,8 +175,26 @@ function eliminarProducto(id) {
         const celdaCantidad = fila.cells[5];
         celdaCantidad.textContent = cantidad;
       }
+
+      const Toast = Swal.mixin({
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.addEventListener('mouseenter', Swal.stopTimer)
+          toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+      })
+      
+      Toast.fire({
+        icon: 'success',
+        title: 'Se ha Eliminado un producto'
+      })
       
     } else {
       console.log(`El producto con ID ${id} no se encuentra en el carrito.`);
     }
   }
+
