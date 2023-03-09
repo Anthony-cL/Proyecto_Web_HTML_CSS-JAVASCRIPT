@@ -1,5 +1,3 @@
-
-
 // Variables
 // Arrays
 
@@ -7,13 +5,15 @@ let carritoDeCompras = [];
 let listaDeProductos = [];
 let tabla;
 
-// Fetch Promesa
+// Fetch 
 
 
 fetch("../js/productos.json")
   .then(response => response.json())
   .then(data => {
-    listaDeProductos = data; // Se asigna el array de productos al arreglo vacío.
+
+    // Se asigna el array de productos al arreglo vacío.
+    listaDeProductos = data; 
   })
   .catch(error => console.error(error));
 
@@ -39,7 +39,7 @@ class ComidaMascota {
   }
 }
 
-// Funciones
+// Funciones & Libreria
 
 function mostrarAlerta(icon, title) {
   const Toast = Swal.mixin({
@@ -66,6 +66,7 @@ function agregarAlCarrito(id) {
     const index = carritoDeCompras.findIndex(producto => producto.id === id);
 
     if (index >= 0) {
+
       // Si el producto ya está en el carrito, actualizar la cantidad en lugar de agregar una nueva fila
 
       const cantidadActual = parseInt(tabla.rows[index+1].cells[5].textContent);
@@ -80,7 +81,6 @@ function agregarAlCarrito(id) {
     } else {
 
       // Si el producto no está en el carrito, agregar una nueva fila
-
       carritoDeCompras.push({...productoEncontrado, cantidad: 1});
       agregarFilaCarrito({...productoEncontrado, cantidad: 1});
       document.querySelector("#mensaje_carrito").textContent = "Uno o mas productos han sido Agregados!.";
