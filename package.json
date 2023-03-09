@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Anthony-cL/PF-Torres-/issues"
   },
-  "homepage": "https://github.com/Anthony-cL/PF-Torres-#readme"
+  "homepage": "https://github.com/Anthony-cL/PF-Torres-#readme",
+  "dependencies": {
+
+  }
 }

@@ -1,0 +1,73 @@
+[
+    {
+      "id": 1,
+      "producto": "Comida para gato Indoor",
+      "marca": "Equilibrio",
+      "kilos": "3KG",
+      "valor": 7000
+    },
+    {
+      "id": 2,
+      "producto": "Comida para gato Indoor",
+      "marca": "Equilibrio",
+      "kilos": "6KG",
+      "valor": 14000
+    },
+    {
+      "id": 3,
+      "producto": "Comida para gatitos",
+      "marca": "Naturalis",
+      "kilos": "3KG",
+      "valor": 5000
+    },
+    {
+      "id": 4,
+      "producto": "comida para perro",
+      "marca": "Alaska",
+      "kilos": "15KG",
+      "valor": 20000
+    },
+    {
+      "id": 5,
+      "producto": "Comida para gato control de pelo",
+      "marca": "Hills",
+      "kilos": "3KG",
+      "valor": 8000
+    },
+    {
+      "id": 6,
+      "producto": "comida para gato control de pelo",
+      "marca": "Hills",
+      "kilos": "6KG",
+      "valor": 15000
+    },
+    {
+      "id": 7,
+      "producto": "comida para gato control de pelo",
+      "marca": "Hills",
+      "kilos": "9KG",
+      "valor": 21000
+    },
+    {
+      "id": 8,
+      "producto": "comida para gato Indoor",
+      "marca": "Hills",
+      "kilos": "3KG",
+      "valor": 5000
+    },
+    {
+      "id": 9,
+      "producto": "comida para perro articular",
+      "marca": "Mv",
+      "kilos": "10KG",
+      "valor": 22000
+    },
+    {
+      "id": 10,
+      "producto": "comida para perro cardio",
+      "marca": "Mv",
+      "kilos": "10KG",
+      "valor": 23000
+    }
+]
+      
