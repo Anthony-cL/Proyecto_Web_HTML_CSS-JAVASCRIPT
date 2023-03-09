@@ -41,6 +41,25 @@ class ComidaMascota {
 
 // Funciones
 
+function mostrarAlerta(icon, title) {
+  const Toast = Swal.mixin({
+    toast: true,
+    position: 'top-end',
+    showConfirmButton: false,
+    timer: 3000,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+      toast.addEventListener('mouseenter', Swal.stopTimer)
+      toast.addEventListener('mouseleave', Swal.resumeTimer)
+    }
+  })
+
+  Toast.fire({
+    icon: icon,
+    title: title
+  })
+}
+
 function agregarAlCarrito(id) {
   let productoEncontrado = listaDeProductos.find(producto => producto.id === id);
   if (productoEncontrado) {
@@ -53,22 +72,10 @@ function agregarAlCarrito(id) {
       tabla.rows[index+1].cells[5].textContent = cantidadActual + 1;
       carritoDeCompras[index].cantidad += 1;
 
-      const Toast = Swal.mixin({
-        toast: true,
-        position: 'top-end',
-        showConfirmButton: false,
-        timer: 3000,
-        timerProgressBar: true,
-        didOpen: (toast) => {
-          toast.addEventListener('mouseenter', Swal.stopTimer)
-          toast.addEventListener('mouseleave', Swal.resumeTimer)
-        }
-      })
-      
-      Toast.fire({
-        icon: 'success',
-        title: 'Signed in successfully'
-      })
+      // Sweet Alert
+      mostrarAlerta("success","Producto Agregado al carrito")
+
+
 
     } else {
 
@@ -78,22 +85,10 @@ function agregarAlCarrito(id) {
       agregarFilaCarrito({...productoEncontrado, cantidad: 1});
       document.querySelector("#mensaje_carrito").textContent = "Uno o mas productos han sido Agregados!.";
 
-      const Toast = Swal.mixin({
-        toast: true,
-        position: 'top-end',
-        showConfirmButton: false,
-        timer: 3000,
-        timerProgressBar: true,
-        didOpen: (toast) => {
-          toast.addEventListener('mouseenter', Swal.stopTimer)
-          toast.addEventListener('mouseleave', Swal.resumeTimer)
-        }
-      })
-      
-      Toast.fire({
-        icon: 'success',
-        title: 'Producto Agregado Al Carrito'
-      })
+      //Sweet Alert
+      mostrarAlerta("success","Producto Agregado al carrito")
+
+
 
       // Se Actualiza el Local Storage 
       localStorage.setItem('carrito', JSON.stringify(carritoDeCompras));
@@ -162,6 +157,9 @@ function eliminarProducto(id) {
       
       // Se cambia el texto mostrando que uno o mas productos fueron eliminados.
       document.querySelector("#mensaje_carrito").textContent = "Uno o mas productos han sido eliminados."; 
+
+      // Sweet Alert
+      mostrarAlerta("success","Producto Elimnado del carrito")
   
       // Se Actualiza el Local Storage
       localStorage.setItem('carrito', JSON.stringify(carritoDeCompras));
@@ -176,25 +174,10 @@ function eliminarProducto(id) {
         celdaCantidad.textContent = cantidad;
       }
 
-      const Toast = Swal.mixin({
-        toast: true,
-        position: 'top-end',
-        showConfirmButton: false,
-        timer: 3000,
-        timerProgressBar: true,
-        didOpen: (toast) => {
-          toast.addEventListener('mouseenter', Swal.stopTimer)
-          toast.addEventListener('mouseleave', Swal.resumeTimer)
-        }
-      })
-      
-      Toast.fire({
-        icon: 'success',
-        title: 'Se ha Eliminado un producto'
-      })
       
     } else {
       console.log(`El producto con ID ${id} no se encuentra en el carrito.`);
     }
-  }
+}
+
 
