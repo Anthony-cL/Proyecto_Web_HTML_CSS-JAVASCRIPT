@@ -159,7 +159,7 @@ function eliminarProducto(id) {
       document.querySelector("#mensaje_carrito").textContent = "Uno o mas productos han sido eliminados."; 
 
       // Sweet Alert
-      mostrarAlerta("success","Producto Elimnado del carrito")
+      mostrarAlerta("success","Producto Eliminado del carrito")
   
       // Se Actualiza el Local Storage
       localStorage.setItem('carrito', JSON.stringify(carritoDeCompras));
