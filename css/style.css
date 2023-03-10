@@ -248,10 +248,21 @@ form .form-check-label {
 }
 .table_container {
   margin-bottom: 8rem;
+  text-align: center;
 }
 
 .caja_mensaje_carrito {
+  margin-left: 10%;
+  margin-right: 10%;
   margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.boton_Comprar {
+  margin-top: 1.5rem;
+  width: 10rem;
 }
 
 /*# sourceMappingURL=style.css.map */

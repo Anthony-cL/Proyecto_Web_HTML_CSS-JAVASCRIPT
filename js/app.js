@@ -180,4 +180,11 @@ function eliminarProducto(id) {
     }
 }
 
+// Boton Comprar
+
+const contenedorMensajeCarrito = document.getElementById("caja_mensaje_de_carrito")
+const botonComprar = document.createElement("button");
+botonComprar.classList.add("boton_Comprar","btn", "btn-primary");
+contenedorMensajeCarrito.appendChild(botonComprar)
+botonComprar.innerText = "COMPRAR"
 
