@@ -30,9 +30,9 @@ window.addEventListener('load', () => {
 // Clase Constructora
 
 class ComidaMascota {
-  constructor(id, nombre, marca, kilos, valor) {
+  constructor(id, producto, marca, kilos, valor) {
       this.id = id;
-      this.nombre = nombre;
+      this.producto = producto;
       this.marca = marca;
       this.kilos = kilos;
       this.valor = valor;
@@ -142,11 +142,13 @@ function agregarFilaCarrito(comida) {
     botonEliminar.addEventListener('click', () => {
     eliminarProducto(botonEliminar.getAttribute('data-id'));
     });
-    }
+}
 
     
 function eliminarFilaCarrito(index) {
     tabla.deleteRow(index+1);
+  
+
 }
 
 function eliminarProducto(id) {
@@ -172,7 +174,7 @@ function eliminarProducto(id) {
         const cantidad = carritoDeCompras.filter(producto => producto.id === idProducto).length;
         const celdaCantidad = fila.cells[5];
         celdaCantidad.textContent = cantidad;
-      }
+      }{}
 
       
     } else {
@@ -187,4 +189,28 @@ const botonComprar = document.createElement("button");
 botonComprar.classList.add("boton_Comprar","btn", "btn-primary");
 contenedorMensajeCarrito.appendChild(botonComprar)
 botonComprar.innerText = "COMPRAR"
+
+botonComprar.addEventListener("click", () => {
+  // Verificar si el array está vacío
+  if (carritoDeCompras.length !== 0 ) {
+
+    Swal.fire({
+      title: 'Gracias Por Comprar!',
+      width: 600,
+      padding: '3em',
+      color: '#716add',
+      backdrop: `
+        rgb(4,49,101)
+        url("../img/Nyan_Cat.gif")
+        left top
+        no-repeat
+      `
+    })
+
+  } else {
+    console.log("Vacio!")
+  }
+
+});
+
 
