@@ -195,7 +195,7 @@ botonComprar.addEventListener("click", () => {
   if (carritoDeCompras.length !== 0 ) {
 
     Swal.fire({
-      title: 'Gracias Por Comprar!',
+      title: '¡Gracias Por Comprar!',
       width: 600,
       padding: '3em',
       color: '#716add',
